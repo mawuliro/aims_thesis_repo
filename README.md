@@ -73,7 +73,7 @@ aims_thesis_repo/
 
 ## The Three Research Objectives
 
-### Objective 1 — Perfect Hiding: When Can Everything Be Hidden?
+### Objective 1 Perfect Hiding: When Can Everything Be Hidden?
 
 **Question.** For which qubit states ρ_RA does there exist an isometry that
 drives both I(R:B) and I(R:E) to zero simultaneously?
@@ -134,7 +134,7 @@ Each A_k ∈ SU(2) uses **ZYZ Euler angles**
 
 ---
 
-### Objective 2 — Bounds: The Geometry of Leakage
+### Objective 2 Bounds: The Geometry of Leakage
 
 **Question.** When perfect hiding fails, what is the minimum achievable total
 leakage C(ρ_RA)?  What are the exact and conjectured bounds on the Pareto
@@ -174,7 +174,7 @@ verified numerically to ~10⁻¹³ bits precision across all tested state
 families.  This formula reveals a direct structural link between **hiding
 capacity** and **quantum discord**:
 
-- **Zero discord** — D = 0 (classical-quantum states): C = 0, perfect hiding
+- **Zero discord**  D = 0 (classical-quantum states): C = 0, perfect hiding
   is achievable.
 - **Symmetric discord** — D(R|A) = D(A|R) = I(R:A)/2 (e.g. maximally
   entangled states): C = I(R:A), no hiding is possible at all.
@@ -185,7 +185,7 @@ capacity** and **quantum discord**:
 
 Canonical states surveyed across the Pareto plots:
 
-- Bell states |Φ±⟩, |Ψ±⟩ — pure, maximally entangled
+- Bell states |Φ±⟩, |Ψ±⟩  pure, maximally entangled
 - Werner states `ρ_W(p) = p·|Φ⁺⟩⟨Φ⁺| + (1−p)·I/4`
 - Separable classical-quantum (CQ) states
 - Noisy-channel outputs: dephasing, amplitude damping, bit-flip channels
@@ -196,7 +196,7 @@ publication standards.
 
 ---
 
-### Objective 3 — High Dimensions: Scaling to Qudits
+### Objective 3  High Dimensions: Scaling to Qudits
 
 **Question.** How do the hiding capacity, quantum discord, and the C_hide
 lower bound behave for Werner, isotropic, and Bell-mixture states as the
@@ -222,9 +222,9 @@ fully JIT-compiled JAX pipeline:
 - **Parametrisation:** U ∈ U(d²) via the **Cayley map**
   `U = (I − iH)⁻¹(I + iH)` with `H = Σ_α θ_α · G_α` expanded in d²×d²
   **Gell-Mann generators**.
-- **Optimiser — Phase 1:** Adam with warmup-cosine schedule, `vmap`-batched
+- **Optimiser  Phase 1:** Adam with warmup-cosine schedule, `vmap`-batched
   over all restarts and all states simultaneously.
-- **Optimiser — Phase 2:** Tight-Adam refinement (lr = 10⁻⁴), seeded from
+- **Optimiser  Phase 2:** Tight-Adam refinement (lr = 10⁻⁴), seeded from
   the best Phase-1 solution plus fresh random restarts.
 - **Discord:** the same two-phase Adam pipeline applied to the classical
   mutual information maximisation over rank-1 projective measurements on A.
@@ -263,13 +263,13 @@ anywhere in the codebase.
 
 ## Dependencies
 
-**Objectives 1 & 2** — qubit, CPU:
+**Objectives 1 & 2**  qubit, CPU:
 
 ```bash
 pip install numpy scipy matplotlib
 ```
 
-**Objective 3** — qudit, GPU-accelerated:
+**Objective 3**  qudit, GPU-accelerated:
 
 ```bash
 pip install numpy matplotlib optax jaxopt
