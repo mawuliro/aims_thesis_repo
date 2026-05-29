@@ -285,17 +285,6 @@ can be redirected to a local output directory without further changes.
 
 ---
 
-## Theoretical References
-
-| Reference | Role in this work |
-|-----------|------------------|
-| Braunstein & Pati (2007), *PRL* — *Quantum information cannot be completely hidden in correlations* | No-hiding theorem; motivates the hiding capacity problem |
-| Buscemi (2009) — *All entangled quantum states are nonlocal* | Source of the exact lower bound C ≥ 2·max(0, I_c) |
-| Modi, Cabrera, Paterek, Piani & Vedral, *RMP* (2012) — *The classical-quantum boundary for correlations* | Discord framework; connects D = 0 to classical-quantum states and to the perfect-hiding condition |
-| Dupuis, Fawzi & Wehner (2014) — *Decoupling with unitary approximate two-designs* | Decoupling framework motivating the isometry ansatz and the Stinespring picture |
-
----
-
 ## Author
 
 **Mawulikplimi Roland Hounkpe**  
